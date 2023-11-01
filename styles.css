@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Nunito&family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #F8F8FF;
+    color: #313131;
+    height: 100vh;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    padding: 10px 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 70px;
+    padding: 10px;
+}
+
+nav ul{
+    display: inline;
+    float: right;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+}
+
+nav ul li a{
+    color: #313131;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #3E00FF;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.about{
+    margin: 20px 40px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.about h1{
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+.about h1 span{
+    color: #3E00FF;
+}
+
+.greetings{
+    width: 65%;
+    padding-right: 10%;
+}
+
+.profile{
+    width: 35%;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Flip Cards CSS */
+.profile {
+    perspective: 700px;
+}
+
+.card img{
+    width: 100%;
+    min-width: 300px;
+}
+
+.card-flip {
+    position: relative;
+    width: 100%;
+    transform-style: preserve-3d;
+    height: auto;
+    transition: all 0.5s ease-out;
+    background: white;
+    border: none;
+}
+
+.card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.card-flip .front {
+    position: relative;
+    z-index: 1;
+}
+
+.card-flip .back {
+    position: absolute;
+    z-index: 0;
+    transform: rotateY(-180deg);
+    
+}
+
+.profile:hover .card-flip {
+    transform: rotateY(180deg);
+} 
+
+
+@media screen and (max-width: 600px) {
+    .greetings, .profile, .project {
+        width: 100%; /* Set both divs to full width */
+    }
+}
+
+.skills{
+    margin: 120px 0px;
+}
+
+.skills h1{
+    text-align: center;
+}
+
+.techstack{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.logo-skill{
+    margin: 30px 65px;
+}
+
+.logo-skill img{
+    width: 100px;
+}
+
+.project{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 50px 0px 120px 0px;
+}
+
+.project h1{
+    text-align: center;
+    width: 100%;
+    font-size: 45px;
+}
+
+.box-area{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.box {
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    width: 40%;
+    min-width: 300px;
+}
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.overlay {
+	width: 100%;
+	height: 0;
+	background: linear-gradient(transparent,#3E00FF 58%);
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	font-size: 14px;
+	transition: height 0.5s;
+}
+.overlay h3 {
+	font-weight: 300;
+    color: #f8f8ff;
+	margin-bottom: 5px;
+	margin-top: 50%;
+	font-size: 20px;
+}
+.overlay p{
+    color: #f8f8ff;
+}
+.overlay a {
+	margin-top: 0px;
+	color: #262626;
+	text-decoration: none;
+	font-size: 14px;
+	background: #fff;
+	border-radius: 50px;
+	text-align: center;
+	padding: 2px 15px;
+}
+.box:hover img{
+    transform: scale(1.1);
+}
+.box:hover .overlay{
+    height: 100%;
+}
+
+.foot-container{
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.socialslogo{
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    margin: 30px 0;
+    width: 60%;
+    align-content: center;
+    justify-content: right;
+}
+
+.contactme{
+    float: left;
+    width: 30%;
+    margin: 30px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
