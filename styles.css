@@ -104,7 +104,8 @@ nav ul li a:hover::after{
 
 .card img{
     width: 100%;
-    min-width: 300px;
+    min-width: 250px;
+    max-width: 300px;
 }
 
 .card-flip {
@@ -149,7 +150,7 @@ nav ul li a:hover::after{
 }
 
 .skills{
-    margin: 120px 0px;
+    margin: 70px 0px;
 }
 
 .skills h1{
@@ -161,7 +162,7 @@ nav ul li a:hover::after{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 50px 0px;
+    margin: 30px 0px;
 }
 
 .logo-skill{
@@ -202,6 +203,8 @@ nav ul li a:hover::after{
 	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
     width: 40%;
     min-width: 300px;
+    max-height: 350px;
+    min-height: 300px;
 }
 .box img{
     width: 100%;
