@@ -76,16 +76,13 @@ nav ul li a:hover::after{
     justify-content:center;
     flex-wrap: wrap;
 }
-
 .about h1{
     font-size: 45px;
     margin-top: 20px;
 }
-
 .about h1 span{
     color: #3E00FF;
 }
-
 .greetings{
     width: 65%;
     padding-right: 10%;
@@ -101,13 +98,11 @@ nav ul li a:hover::after{
 .profile {
     perspective: 700px;
 }
-
 .card img{
     width: 100%;
     min-width: 250px;
     max-width: 300px;
 }
-
 .card-flip {
     position: relative;
     width: 100%;
@@ -117,7 +112,6 @@ nav ul li a:hover::after{
     background: white;
     border: none;
 }
-
 .card-flip div {
     backface-visibility: hidden;
     transform-style: preserve-3d;
@@ -125,19 +119,16 @@ nav ul li a:hover::after{
     width: 100%;
     border: none;
 }
-
 .card-flip .front {
     position: relative;
     z-index: 1;
 }
-
 .card-flip .back {
     position: absolute;
     z-index: 0;
     transform: rotateY(-180deg);
     
 }
-
 .profile:hover .card-flip {
     transform: rotateY(180deg);
 } 
@@ -154,11 +145,9 @@ nav ul li a:hover::after{
 .skills{
     margin: 70px 0px;
 }
-
 .skills h1{
     text-align: center;
 }
-
 .techstack{
     width: 100%;
     display: flex;
@@ -166,13 +155,15 @@ nav ul li a:hover::after{
     justify-content: center;
     margin: 30px 0px;
 }
-
 .logo-skill{
     margin: 30px 65px;
+    transition: transform 0.3s; /* Smooth transition for hover effects */
 }
-
+.logo-skill:hover {
+    transform: scale(1.2); /* Scale the logo on hover */
+}
 .logo-skill img{
-    width: 100px;
+    width: 80px;
 }
 
 .project{
@@ -181,13 +172,11 @@ nav ul li a:hover::after{
     align-items: center;
     margin: 50px 0px 120px 0px;
 }
-
 .project h1{
     text-align: center;
     width: 100%;
     font-size: 45px;
 }
-
 .box-area{
     display: flex;
     flex-wrap: wrap;
