@@ -142,10 +142,12 @@ nav ul li a:hover::after{
     transform: rotateY(180deg);
 } 
 
-
 @media screen and (max-width: 600px) {
     .greetings, .profile, .project {
         width: 100%; /* Set both divs to full width */
+    }
+    .box{
+        max-height: 250px;
     }
 }
 
@@ -202,9 +204,9 @@ nav ul li a:hover::after{
 	overflow: hidden;
 	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
     width: 40%;
+    /* max-width: 300px; */
     min-width: 300px;
     max-height: 350px;
-    min-height: 300px;
 }
 .box img{
     width: 100%;
