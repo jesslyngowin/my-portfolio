@@ -1,3 +1,3 @@
-# my-portfolio
+# personal portfolio
 In development <br />
-Visit here https://jesslyngowin.github.io/my-portfolio/ 
+Visit jesslyngwn.vercel.app
